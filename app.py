@@ -112,7 +112,7 @@ def clean_text(df):
     all_titles = re.sub(r'[^a-z\s]', ' ', all_titles)
     words = all_titles.split()
     # Filter stopwords
-    clean_words = [word for word in words if word not up in stopwords_id and len(word) > 1]
+    clean_words = [word for word in words if word not in stopwords_id and len(word) > 1]
     return clean_words
 
 # ==========================================
